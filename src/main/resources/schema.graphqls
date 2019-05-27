@@ -1,0 +1,32 @@
+schema {
+	query: Query
+	mutation: Mutation
+}
+
+type Query {
+	getUser(id: String): [User]
+	getPhone(phoneNumber: String): [Phone]
+}
+
+type Mutation {
+	updateUser(user: UserUpdate): User
+}
+
+type User {
+	id: ID
+	password: String
+	age: Int
+	createDate: String
+	phoneList: [Phone]!
+}
+
+type Phone {
+	idx: Int
+	phoneNumber: String
+}
+
+input UserUpdate {
+	id: ID!
+	password: String
+	age: Int
+}
