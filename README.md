@@ -1,3 +1,3 @@
 # graphql
 
- - java(spring boot)에서 graphql을 사용하는 
+ - java(spring boot)에서 graphql을 사용하는 예제
